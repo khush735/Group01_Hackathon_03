@@ -74,4 +74,50 @@ ul {
     margin-top: 20px;
 }
 
+/* Task Item Styling */
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
+li:hover {
+    transform: scale(1.02);
+}
+
+li.completed {
+    background-color: #d1f7c4;
+    color: #8e8e8e;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Remove Button Styling */
+button.remove {
+    background-color: #e74c3c;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.remove:hover {
+    background-color: #c0392b;
+}
+
+button.remove:focus {
+    outline: none;
+}
+
+/* Optional: Add some padding for better spacing */
+#taskList {
+    margin-top: 20px;
+}
